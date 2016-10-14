@@ -1,0 +1,49 @@
+<HTML> 
+<HEAD> 
+<TITLE>JavaScript:Beispiel 5</TITLE> 
+<SCRIPT language="JavaScript">function loese() { 
+var p=document.formular.p.value; 
+
+var q=document.formular.q.value; 
+
+if (p*p/4<q) document. formular.x1.value="keine Loesung"; 
+
+else {document.formular.x1.value=-p/2+Math.sqrt(p*p/4-q) 
+
+document.formular.x2.value=-p/2-Math.sqrt(p*p/4-q); 
+
+} 
+
+}</SCRIPT> 
+
+</HEAD> 
+
+<BODY> 
+
+<FORM name=formular> 
+<CENTER><FONT SIZE="+1"><B>x<SUP>2</SUP></B> + 
+
+</FONT> 
+
+<INPUT TYPE=text NAME=p VALUE="" SIZE=5><FONT SIZE="+1"><B>x 
+
++</B></FONT> 
+
+<INPUT TYPE=text NAME=q VALUE="" SIZE=5> 
+
+<FONT SIZE="+1"><B>= 0</B> 
+
+</FONT> 
+
+<P><FONT SIZE="+1"><B><INPUT TYPE=button NAME=knopf VALUE="loesen" onclick="loese()"></B></FONT> 
+
+<P><FONT SIZE="+1"><B>x1=<INPUT TYPE=text NAME=x1 VALUE="" SIZE=30></B></FONT> 
+
+<P><FONT SIZE="+1"><B>x2=<INPUT TYPE=text NAME=x2 VALUE="" SIZE=30></B></FONT></CENTER> 
+
+</FORM>
+
+</BODY> 
+
+</HTML> 
+
